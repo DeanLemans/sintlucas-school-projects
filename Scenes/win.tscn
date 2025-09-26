@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://crx7nexie5s80"]
+
+[ext_resource type="Script" path="res://win.gd" id="1_rijo4"]
+[ext_resource type="Texture2D" uid="uid://crq66vscgr5qi" path="res://meme/goalfinish line placeholder.jpg" id="2_0huvl"]
+[ext_resource type="Theme" uid="uid://bq52vocemd2d3" path="res://Scenes/UI prefab.tres" id="3_hxckr"]
+[ext_resource type="Texture2D" uid="uid://dia4nlu1rgn63" path="res://Asset Pack/donation.jpg" id="4_osljr"]
+
+[node name="win" type="Node2D"]
+script = ExtResource("1_rijo4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_0huvl")
+stretch_mode = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_hxckr")
+
+[node name="TooMain" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 523.0
+offset_top = 350.0
+offset_right = 700.0
+offset_bottom = 425.0
+text = "to main menu"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 140.0
+offset_right = 693.0
+offset_bottom = 203.0
+bbcode_enabled = true
+text = "[center]Thou has won.
+good job[/center]"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Control"]
+clip_contents = false
+offset_left = 104.0
+offset_top = 128.0
+offset_right = 318.0
+offset_bottom = 238.0
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center]please consider donating! for helping me on my game development journy![/center]"
+scroll_active = false
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+offset_left = 127.0
+offset_top = 260.0
+offset_right = 288.0
+offset_bottom = 420.0
+texture = ExtResource("4_osljr")
+expand_mode = 1
+
+[connection signal="pressed" from="Control/TooMain" to="." method="_on_too_main_pressed"]
