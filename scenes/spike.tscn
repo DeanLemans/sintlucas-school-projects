@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgnw60dlx0mwc"]
+
+[ext_resource type="Texture2D" uid="uid://qrduxih4c0dd" path="res://img/Traps/Spikes/Idle.png" id="1_n1sa2"]
+[ext_resource type="Script" path="res://scripts/spike.gd" id="1_o6x2y"]
+
+[node name="Area2D" type="Area2D"]
+z_index = 1
+position = Vector2(66, 20)
+script = ExtResource("1_o6x2y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-43, -382)
+scale = Vector2(5.6875, 40.125)
+texture = ExtResource("1_n1sa2")
+centered = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-18, 255.791)
+scale = Vector2(1, 4.85746)
+polygon = PackedVector2Array(18, -3, 31, -35, 41, -55.7475, 50, -34.9546, 56, -17.8675, 61, -3, -25, -3, -20, -18, -14, -35, -5, -55.7475, 4, -35)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
