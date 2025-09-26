@@ -1,0 +1,97 @@
+body
+{
+    background-color: rgb(213, 213, 211);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin: 0x;
+}
+
+/*Classes*/
+
+.centering
+{
+    text-align: center;
+}
+
+.reset
+{
+    clear: both;
+}
+
+.textLeft
+{
+    margin-left: 10%;
+    width: 400px;
+}
+
+.highlight
+{
+    color: rgb(208, 0, 0);
+}
+
+/*ID*/
+
+#topnavbar
+{
+    background-color: rgb(205, 220, 210);
+    height: 25px;
+}
+
+#topnavbar a
+{
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#topnavbar :hover
+{
+    background-color: wheat;
+}
+
+#deanDescription
+{
+    float: left;
+    width: 500px;
+    margin: 0px 0px 0px 100px;
+}
+
+#meme
+{
+    float: left;
+    width: 333px;
+    margin: 0px 0px 0px 50px;
+}
+
+#plant
+{
+   float: left; 
+   width: 330px;
+   margin: 0px 0px 0px 0px;
+}
+
+#hobbyList
+{
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    font-size: 22px;
+}
+
+#pictureNsocials
+{
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+
+#pageContainer
+{
+    width: 700;
+    margin: 0px 0px 0px 0px;
+}
+
+#leftSide
+{
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
