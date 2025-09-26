@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #393a3f;
+}
+
+.HeadText:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 2vh;
+    outline-style: solid;
+    outline-color: #ececec;
+    outline-width: 3px;
+    z-index: 5;
+    background-color: #c06528;
+    color: #383a3f;
+    user-select: none;
+}
+
+.HeadText{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 2vh;
+    outline-style: solid;
+    outline-color: #ececec;
+    outline-width: 3px;
+    z-index: 5;
+    background-color: #383a3f;
+    color: #c06528;
+    user-select: none;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr;
+    grid-template-areas:
+  "aboutme aboutme myproj myex"
+  "img1 img2 img2 img2";
+}
+
+#containerPR {
+    justify-items: center;
+    background-color: #c06528;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 4fr;
+    grid-template-areas:
+  "nav nav nav"
+  "projb projb projb"
+  "projr1 projr2 projr3";
+}
+
+#containerBM {
+    justify-items: center;
+    background-color: #c06528;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 0.25fr 2fr;
+    grid-template-areas:
+  "nav nav"
+  "txt img";
+}
+
+#containerEX{
+    justify-items: center;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 2fr;
+    grid-template-areas:
+    "nav nav nav"
+    "exr1 exr2 exr3";
+}
+.exp1 {
+    margin-top: 2vh;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left {
+    background-color: #c06528;
+    width: 4vw;
+    height: 3vh;
+    position: absolute;
+    left: 0;
+}
+
+.Text{
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: #ececec;
+}
+
+.Textframe{
+    width: 90%;
+    height: 80%;
+    background-color: #ececec;
+}
+
+.act {
+    background-color: #c06528;
+    width: 22vw;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.right {
+    background-color: #c06528;
+    width: 4vw;
+    height: 3vh;
+    position: absolute;
+    right: 0; /* Aligns it to the right edge of .exp1 */
+}
+
+#expr1{
+    grid-area: exr1;
+    background-color: #383a3f;
+    width: 100%;
+    height: 100%;
+}
+
+#expr2{
+    grid-area: exr2;
+    background-color: #383a3f;
+    width: 100%;
+    height: 100%;
+}
+
+#expr3{
+    grid-area: exr3;
+    background-color: #383a3f;
+    width: 100%;
+    height: 100%;
+}
+
+#bmtxt{
+    align-self: center;
+    justify-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #383a3f;
+    margin-top: 10px;
+    margin-left: 30px;
+    grid-area: txt;
+    border-radius: 15px;
+}
+
+#bm{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ececec;
+}
+
+#header{
+    font-size: 5em;
+    margin-top: 30px;
+    color: #ececec;
+}
+
+#bmgimgnf{
+    background-color: aliceblue;
+    width: 90%;
+    height: 90%;
+}
+
+#bmimg{
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383a3f;
+    grid-area: img;
+    width: 30vw;
+    height: 70vh;
+    margin-right: 60px;
+    border-radius: 15px;
+}
+
+#name {
+    padding-top: 25px;
+    padding-left: 20px;
+    grid-area: img1;
+    z-index: 3;
+    white-space: nowrap;
+    font-size: 5em;
+    width: 100px;
+    position: relative;
+    color: #c06528;
+}
+
+#projectb{
+    display: flex;
+    height: 50vh;
+    width: 80vw;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #393a3f;
+    grid-area: projb;
+}
+
+#white {
+    transform: skew(-10deg);
+    background-color: #393a3f;
+    width: 150%;
+    height: 100%;
+    grid-area: img1;
+    z-index: 1;
+    outline-style: solid;
+    outline-color: #cbcdd3;
+    outline-width: 3px;
+
+}
+
+#Translate{
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    background-color: #393a3f;
+    grid-area: img2;
+    z-index: 100;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+#GH{
+    margin-top: 50vh;
+    margin-left: 5vw;
+    grid-area: img1;
+    z-index: 10;
+    width: 15vh;
+    height: 15vh;
+}
+
+#ML{
+    margin-top: 30vh;
+    margin-left: 5vw;
+    grid-area: img1;
+    z-index: 10;
+    width: 15vh;
+    height: 15vh;
+}
+
+#LI{
+    margin-top: 70vh;
+    margin-left: 5vw;
+    grid-area: img1;
+    z-index: 10;
+    width: 15vh;
+    height: 15vh;
+}
+
+.socimg{
+    border-radius: 100px;
+    background-color: #ececec;
+    width: 15vh;
+    height: 15vh;
+}
+
+#imgTNL{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#imgTUK{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+#txtbm{
+    color: #ececec;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-top: 100px;
+    position: relative;
+    grid-area: img1;
+    z-index: 4;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    transition: top 0.3s;
+    grid-area: nav;
+    z-index: 3;
+}
+
+.navelements{
+    width: 33%;
+}
+
+#home{
+    grid-area: home;
+    width: 100%;
+}
+
+#abtme {
+    grid-area: aboutme;
+    width: 100%;
+}
+
+#myproj {
+    grid-area: myproj;
+    width: 100%;
+}
+
+#myexp {
+    grid-area: myex;
+    width: 100%;
+}
+
+#img2 {
+    width: 100%;
+    height: 100%;
+    grid-area: img2;
+    z-index: 0;
+}
+
+#PBframe{
+    background-color: #ffe800;
+    width: 40vw;
+    height: 40vh;
+    margin-left: 20px;
+}
+
+#PBMT{
+    color: #c06528;
+    align-self: flex-start;
+    font-size: 2em;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+#PBT{
+    color: #c06528;
+    font-size: 1.3em;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#PBTbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+#PBimg{
+    width: 100%;
+    height: 100%;
+}
+
+#projr1{
+    display: flex;
+    flex-direction: column;
+    grid-area: projr1;
+    background-color: #c06528;
+    width: 25vw;
+    height: 100vh;
+}
+
+.projr1l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    background-color: #393a3f;
+    margin-top: 30px;
+}
+
+#projr2{
+    display: flex;
+    flex-direction: column;
+    grid-area: projr2;
+    background-color: #c06528;
+    width: 25vw;
+    height: 100vh;
+}
+
+#projr3{
+    display: flex;
+    flex-direction: column;
+    grid-area: projr3;
+    background-color: #c06528;
+    width: 25vw;
+    height: 100vh;
+}
+
+.imgfill{
+    width: 85%;
+    height: 80%;
+    background-color: #ececec;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    flex-direction: column;
+    display: flex;
+    background-color: #393a3f;
+    margin: auto;
+    padding: 20px;
+    width: 43vw;
+    height: 60vh;
+}
+
+/* The Close Button */
+
+.btnstyle{
+    margin-top: 10px;
+    background-color: #393a3f;
+    color: #c06528;
+    border: none;
+}
+
+#infoweb{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#webtxt{
+    color: #c06528;
+    font-size: 1.5em;
+    justify-self: center;
+    align-self: center;
+}
+
+#webname{
+    color: #c06528;
+    justify-self: center;
+    align-self: center;
+    font-size: 4em;
+}
+
+#webimg{
+    justify-self: flex-start;
+    align-self: flex-end;
+    width: 40vw;
+    height: 40vh;
+    background-color: #ececec;
+}
+
+#end{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
